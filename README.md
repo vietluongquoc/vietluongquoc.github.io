@@ -11,10 +11,17 @@ date start : 2024-02-08
 - CSS, JS, HTML
 
 ## Update
-### version: 1.240228
+### version: 1.240218
+- update nav bar 
+
+### version: 1.240208
 - Create the new respository
 - Move the data from website inu-lqviet.github.io
-- Create the font end
+- Star project
+
+### version: 1.240208
+- Create the new respository
+- Create nav bar
 
 ### List to do
 - Create the responsive nav bar

@@ -31,7 +31,14 @@ const sliderData = [
 const courseData = [
     {
         id:0,
-        
+        title:'Ve Ky Thuat',
+        icon:"./public/img/img/course/drawing.svg",
+        img:"",
+        "des-short":"Học phần này trang bị cho sinh viên những nội dung về những tiêu chuẩn trình bày bản vẽ kỹ thuật,phương pháp dựng hình,hình chiếu vuông góc,hình chiếu trục đo, hình cắt, hình trích để biểu diễn vật thể trên mặt phẳng.",
+        "des-full":"Học phần này trang bị cho sinh viên những nội dung về những tiêu chuẩn trình bày bản vẽ kỹ thuật,phương pháp dựng hình,hình chiếu vuông góc,hình chiếu trục đo, hình cắt, hình trích để biểu diễn vật thể trên mặt phẳng.Sau khi học xong học phần này,sinh viên áp dụng các phương pháp dựng hình để xây dựng một bản vẽ kỹ thuật theo TCVN, từ đó xây dựng bản vẽ kỹ thuật hoàn chỉnh và có khả năng làm việc độc lập, chịu trách nhiệm cá nhân và có ý thức học tập và bảo vệ quan điểm cá nhân.",
+        "percent": 50,
+        "doc":"",
+        "ref":"",
     },
     {
 
@@ -48,6 +55,12 @@ const sliderFun = ()=>{
             </div>
       </div>`).appendTo($('#sliderProjectdiv'))
     })
+};
+const courseIcon = ()=>{
+
+};
+const courseSection = ()=>{
+
 };
 $(document).ready(()=>{
     sliderFun();

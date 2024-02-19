@@ -4,3 +4,9 @@
 .slidertext{
     color: red;
 }
+.section{
+    margin: 10px;
+}
+.ulcenter{
+    align-items: center;
+}

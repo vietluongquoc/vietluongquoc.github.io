@@ -11,6 +11,8 @@ date start : 2024-02-08
 - CSS, JS, HTML
 
 ## Update
+### version: 1.240219
+- update carousel
 ### version: 1.240218
 - update nav bar 
 

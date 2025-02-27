@@ -11,6 +11,10 @@ date start : 2024-02-08
 - CSS, JS, HTML
 
 ## Update
+### version: 1.250227
+- update New flexible website
+
+
 ### version: 1.240219
 - update carousel
 ### version: 1.240218
@@ -26,6 +30,5 @@ date start : 2024-02-08
 - Create nav bar
 
 ### List to do
-- Create the responsive nav bar
-- 
+- Update contents
 

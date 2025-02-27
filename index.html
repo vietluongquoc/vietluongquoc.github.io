@@ -3,111 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viet's landing page</title>
+    <meta name="description" content="CV page">
+    <meta name="author" content="vietlq@huit.edu.vn">
+    <title>Viet's Landing Page</title>
     
     <link rel="apple-touch-icon" sizes="180x180" href="./public/img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./public/img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./public/img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./public/img/favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
-    <script src="./vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="./vendor/jquery/jquery.js"></script>
+    <link href="./public/css/style.css" rel="stylesheet" type="text/css">
+    <script src="./vendor/jquery-1.11.1.js"></script>
+    <script src="./vendor/jquery.scrollUp.min.js"></script>
+    <link href="./vendor/bootstrap.min.css" rel="stylesheet" >
+    <script src="./vendor/bootstrap.min.js"></script>
+    
 </head>
 <body>`
-    <header>
-        <div class="container">
-          <div class="row">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#home"><img src="./public/img/favicon_io/android-chrome-192x192.png" class="img-thumbnail w-50"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="true">
-                        Courses
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Drawing</a></li>
-                        <li><a class="dropdown-item" href="#">Mechanical</a></li>
-                        <li><a class="dropdown-item" href="#">Control Thoery</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Infor</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-vietlg">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="./public/img/favicon_io/apple-touch-icon.png" class="img-thumbnail w-50"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-vietlg">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#mainCarousel">Home</a>
+          </li>
+          <li>
+            <a href="#Uproject">
+              University Project
+            </a>
+          </li>
+          <li>
+            <a href="#infor">About Me</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="mainCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li  data-slide-to="0" class="active"></li>
+        <li data-target="#mainCarousel" data-slide-to="1"></li>
+        <li data-target="#mainCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+          <img src="./public/img/img/slide//20191019_134325.jpg" alt="Landing Gear">
+          <div class="carousel-caption">
+            <h3>Landing geaer system equipped with Magnetorheological damper</h3>
+            <p><a class="btn btn-primary btn-lg" href="https://www.mdpi.com/2076-3417/12/1/400" role="button">More Information</a></p>
           </div>
         </div>
-    </header>
-    <div class="main">
-      <section class="section" id="#home">
-        <div id="carouselprojcets" class="carousel slide">
-          <div class="carousel-inner" id="sliderProjectdiv">
-            <div class="carousel-item active">
-              <img src="./public/img/img/slide/01landinggear.jpg" class="mx-auto d-block sliderimg" alt="...">
-              <div class="carousel-caption d-md-block">
-                <h5 class="slidertext"><a href="https://www.mdpi.com/2076-3417/10/4/1459">Aircraft's Landing Gear</a></h5>
-                <p class="slidertext">Aircraft landing gear equipped with a magnetorheological (MR) damper is a semi-active
-                  system that contains nonlinear behavior, disturbances, uncertainties, and delay times. </p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselprojcets" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselprojcets" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section class="section" id="#course">
-        <h2 class="text-center">
-          COURSE
-        </h2>
-        <div class="row">
-          <div class="col-sm text-center">
-            <img src="./public/img/img/course/drawing.svg" class="img-thumbnail" width="140" height="140">
-            <h2 class="fw-normal ">Ve Ky Thuat</h2>
-            <p>
-              Học phần này trang bị cho sinh viên những nội dung về những tiêu chuẩn trình bày bản vẽ kỹ thuật,phương pháp dựng hình,hình chiếu vuông góc,hình chiếu trục đo, hình cắt, hình trích để biểu diễn vật thể trên mặt phẳng.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">
-                Chi Tiet
-              </a>
-            </p>
+        <div class="item">
+          <img src="./public/img/img/slide/openMan.jpg" alt="Landing Gear">
+          <div class="carousel-caption">
+            <h3>Web App for an open-Manipulator X</h3>
+            <p><a class="btn btn-primary btn-lg" href="https://vietluongquoc.github.io/manipulator" role="button">More Information</a></p>
           </div>
         </div>
-      </section>
-      <section class="section" id="#tempCourse">
-        <div class="container">
-          <div class="row">
-
+        <div class="item">
+          <img src="./public/img/img/slide/3Ddrawing.jpg" alt="Landing Gear">
+          <div class="carousel-caption">
+            <h3 style="color: black;">Web App to show 3D Drawing</h3>
+            <p><a class="btn btn-primary btn-lg" href="https://vietluongquoc.github.io/3Ddrawing" role="button">More Information</a></p>
           </div>
         </div>
-      </section>
-      <section class="section" id="#infor">
-        <h2 class="text-center">
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#mainCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+  </div>
+  <div class="container" id="Uproject">
+    <h1>University Project</h1>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="./public/img/img/Thumb/Matlab_Logo.png" alt="Matlab" class="img-responsive">
+          <div class="caption">
+            <h3>Matlab</h3>
+            <p>Matlab Project</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="./public/img/img/Thumb/images.jfif" alt="Matlab" class="img-responsive">
+          <div class="caption">
+            <h3>Recurdyn</h3>
+            <p>Recurdyn Project</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="./public/img/img/Thumb//iotIcon.webp" alt="Matlab" class="img-responsive">
+          <div class="caption">
+            <h3>Internet of Thing</h3>
+            <p>IoT Project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="infor">
+        <h1>
           INFORMATION
-        </h2>
+        </h1>
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <img class="img w-100" src="./public/img/img/image.jpg" alt="Korea-2007">
-            </div>
-          </div>
           <div class="row">
             <div class="col-sm">
               <h4 class="text-center">PROFILE</h4>
@@ -129,19 +148,51 @@
                   &#9829 Lecturer at Ho Chi Minh City University of Industry and Trade (Old name is Ho Chi Minh City University of Food Industry) (2023-Present).
               </p>
             </div>
-            <div class="col-sm text-center ulcenter">
-              <h4>CONTACT</h4>
-              <ul class="list-group list-group-flush list-group-horizontal align-items-center">
-                <li class="list-group-item"><a href="https://github.com/vietluongquoc" class="github"><img src="./public/img/img/GitHub-Mark-32px.png"></a></li>
-                <li class="list-group-item"><a href="https://www.researchgate.net/profile/Viet-Luong" class="researchgate"><img src="./public/img/img/researchgate_icon_130843.png"></a></li>
-                <li class="list-group-item"><a href="https://scholar.google.com/citations?user=FfoOgxUAAAAJ&hl=en" class="googlescholar"><img src="./public/img/img/google_scholar_icon_130918.png"></a></li>
+            <h4 class="text-center">RESEARCH INFORMATION</h4>
+            <div class="researchIcon">
+              <ul class="list-inline text-center">
+                <li>
+                  <a href="https://github.com/vietluongquoc" class="github"><p>GITHUB</p><img src="./public/img/Icon/GitHub-Mark-32px.png" class="imgIcon"></a>
+                </li>
+                <li>
+                  <a href="https://www.researchgate.net/profile/Viet-Luong" class="researchgate"><p>RESEARCH GATE</p><img src="./public/img/Icon/researchgate_icon_130843.png" class="imgIcon"></a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com/citations?user=FfoOgxUAAAAJ&hl=en" class="googlescholar"><p>GG SCHOLAR</p><img src="./public/img/Icon/google_scholar_icon_130918.png" class="imgIcon"></a>
+                </li>
               </ul>
+
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+  </div>
+  <div class="container" id="contact">
+    <div class="col-sm text-center ulcenter">
+      <h1>CONTACT US</h1>
       
-    <script src="./public/js/main.js"></script>
+      <div class="container">
+    		<p>If you have any question, please don't hesitate to contact me at: vietlq@huit.edu.vn</p>
+    		<div class="col-md-6">
+    			<div class="contact-form">
+					<form>
+						<input id="name" name="name" type="text" placeholder="Name:" required>
+						<input id="email" name="email" type="text" placeholder="Email:" required>
+						<input id="title" name="title" type="title" placeholder="Title:" required>
+						<textarea id="message" name="message" placeholder="Your Message:" rows="5" required></textarea>
+						<br>
+						<button name="submit" id="submit" type="submit">Send Message</button>
+					</form>
+				</div>  
+			</div>	
+			<div class="col-md-6">
+				<div class="text-center">
+					<span></span>
+				</div>
+			</div>
+    	</div>
+    </div>
+  </div>
+  <script src="./public/js/main.js"></script>
 </body>
 </html>

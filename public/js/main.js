@@ -29,6 +29,8 @@ const sliderData = [
 
 ];
 
+
+
 const sliderFun = ()=>{
     $('#carousel-indicators').empty();$('#carousel-inner').empty();
     sliderData.forEach((slide)=>{
@@ -40,6 +42,12 @@ const sliderFun = ()=>{
             </div>">`).appendTo($('#carousel-inner'));
     });
 };
+
+const convertTojson = ()=>{
+    $('form').submit(()=>{
+        formData.push($('form').value());
+    })
+}
 
 $(document).ready(()=>{
     // sliderFun();

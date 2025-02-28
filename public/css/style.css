@@ -2,6 +2,10 @@ h1{
     text-align: center;
 }
 
+p{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* nav */
 .navbar-default {
@@ -127,7 +131,11 @@ h1{
 }
 
 .imgIcon{
-    scale: 1.5;
+    width: 50px;
     margin: 10px;
 }
 
+.conIcon{
+    width: 100px;
+    margin: 10px;
+}
